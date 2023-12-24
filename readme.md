@@ -2,9 +2,9 @@
 
 A command line tool for macOS.
 
-This is a modern version of the Carbon [keys.m](https://gist.github.com/ttscoff/3265170) and possibly other similar programs.
+This is a modern version of the Carbon [keys.m](https://brettterpstra.com/2012/08/05/quick-tip-checking-for-modifier-keys-in-shell-scripts/) and possibly other similar programs.
 
-The program returns the state of the following modifier keys on macOS:
+The program returns the state of the following modifier keys on macOS:  
 - Caps Lock (⇪)
 - Function (fn)
 - Control (⌃)
@@ -12,7 +12,7 @@ The program returns the state of the following modifier keys on macOS:
 - Shift (⇧)
 - Command (⌘)
 
-With all modifier keys down, it will return: `capslock-function-control-option-shift-command`.
+With all modifier keys down, it will return the string: `capslock-function-control-option-shift-command`.
 The order will remain the same, no matter which keys are down. For example, with only Control and Command down, the output is: `control-command`.
 
 The order `control-option-shift-command` corresponds to the traditional order as used by Apple.[^1]
