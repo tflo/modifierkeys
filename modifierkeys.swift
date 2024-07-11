@@ -6,6 +6,10 @@ var currModifiers: [String] = []
 if currFlags.contains(.capsLock) {
 	currModifiers.append("capslock")
 }
+// Alternative for capsLock, but apparently the same result
+// if currFlags.intersection(.deviceIndependentFlagsMask).contains(.capsLock) {
+// 	currModifiers.append("capslock")
+// }
 if currFlags.contains(.function) {
 	currModifiers.append("function")
 }
