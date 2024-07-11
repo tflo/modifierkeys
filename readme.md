@@ -17,7 +17,7 @@ The order will remain the same, no matter which keys are down. For example, with
 
 The order `control-option-shift-command` corresponds to the traditional order as used by Apple.[^1]
 
-## Usage example:
+## Usage example in a shell script, with sample output
 
 ```shell
 #!/usr/bin/env zsh
@@ -41,13 +41,15 @@ fi
 echo "${output}"
 ```
 
-*Compile with `swiftc <path/to/modifierkeys.swift>` or try the binary from Releases, if available.*
+## Build
+
+Compile with `swiftc <path/to/modifierkeys.swift>` or try the binary from Releases, if available.
 
 Tested on macOS Ventura and Sonoma (Intel).
 
 ---
 
-I'm not too familiar with Swift, so any suggestions for improvements or pointers to bad practice in my code are welcome.
+I'm not too familiar with Swift and the macOS API, so any suggestions for improvements are welcome.
 
 [^1]: Example doc: https://support.apple.com/en-us/HT201236  
 Opinion: https://leancrew.com/all-this/2017/11/modifier-key-order/
